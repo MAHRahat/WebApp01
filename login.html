@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LogIn</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/darkcss.css">
+		<script src="js/logincanvas.js"></script>
+	</head>
+	<body onload="init();">
+		<canvas id="logincanvas"></canvas>
+		<div class="container">
+			<h1>
+				LOG IN
+			</h1>
+			<form action="loginvalidate" method="POST">
+				<span class="ips">
+					<span class="ipimg"></span>
+					<input class="ip" type="email" name="email" placeholder="E-mail" required=""/>
+				</span>
+				<span class="ips">
+					<span class="ipimg"></span>
+					<input class="ip" type="password" name="pass" placeholder="Password" required=""/>
+				</span>
+				<input type="submit" value="Log In">
+			</form>
+		</div>
+	</body>
+</html>
